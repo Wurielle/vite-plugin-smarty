@@ -22,10 +22,8 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({
     extended: true
 }));
-export const smartyServerPlugin = ({
-        templateDir,
-    }: Options) => {
-
+export const smartyServerPlugin = (options: Options) => {
+    const templateDir = options.templateDir || defaultOptions.templateDir
 
     return {
         name: 'smarty-server-plugin',

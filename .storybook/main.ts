@@ -1,7 +1,7 @@
 import type { StorybookConfig } from "@storybook/vue3-vite";
 import { loadConfigFromFile, mergeConfig } from 'vite'
 import { join, resolve } from 'path'
-import { smartyServerPlugin } from '../dist/server.modern'
+import { smartyServerPlugin } from '../dist/server.esm'
 
 const config: StorybookConfig = {
   stories: ["../src/**/*.mdx", "../src/**/*.stories.@(js|jsx|ts|tsx)"],
@@ -18,7 +18,7 @@ const config: StorybookConfig = {
     return mergeConfig(config, {
       plugins: [
         smartyServerPlugin({
-          templateDir: join(process.cwd(), './components'),
+          templateDir: join(process.cwd(), './src/components'),
         }),
       ],
     });

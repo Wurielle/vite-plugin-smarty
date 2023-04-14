@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/vue3';
-import { component } from '../../dist/vue.modern';
+import { component } from '../../dist/vue.esm';
 
 const meta = {
   title: 'Smarty/Foo',

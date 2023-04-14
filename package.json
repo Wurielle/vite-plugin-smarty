@@ -33,19 +33,18 @@
     "@storybook/vue3": "^7.0.4",
     "@storybook/vue3-vite": "^7.0.4",
     "@vitejs/plugin-vue": "^4.1.0",
-    "cors": "^2.8.5",
-    "express": "^4.18.2",
-    "jsmart": "^4.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "storybook": "^7.0.4",
     "typescript": "^4.9.3",
     "vite": "^4.2.1",
-    "vite-plugin-dts": "^2.2.0",
     "vue": "^3.2.47",
-    "vue-tsc": "^1.2.0"
+    "vue-tsc": "^1.2.0",
+    "microbundle": "^0.15.1"
   },
   "dependencies": {
-    "microbundle": "^0.15.1"
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "jsmart": "^4.0.0"
   }
 }
